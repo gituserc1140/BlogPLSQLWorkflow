@@ -1,0 +1,12 @@
+  name: Publish Blog
+
+  on:
+    push:
+      paths:
+        -"_posts/**"
+
+  jobs:
+    notify:
+      runs-on: ubuntu-latest
+      steps:
+        - run: echo "New post detected"
